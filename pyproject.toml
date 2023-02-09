@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "Backup Juggler"
+version = "0.0.1"
+description = "Creation of multiple backups from multiple sources at the same time made easy"
+authors = ["Marcos Raulino <marcosfsraulino@gmail.com>"]
+readme = "README.md"
+packages = [{include = "backup_juggler"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+commitizen = "^2.40.0"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.0.1"
+version_files = ["pyproject.toml:version"]
+tag_format = "$version"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
