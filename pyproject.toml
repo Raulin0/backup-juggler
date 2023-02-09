@@ -8,6 +8,7 @@ packages = [{include = "backup_juggler"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+tqdm = "^4.64.1"
 
 [tool.poetry.group.dev.dependencies]
 commitizen = "^2.40.0"
